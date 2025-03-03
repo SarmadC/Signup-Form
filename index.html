@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <img src="logo.jpg" alt="Photo by mae black on Unsplash">
+        <p class="logo">Logo</p>
+    </div>
+    <div class="right-container">
+        <div>This is not a real online service!</div>
+        <div class="form-section">
+            <p>Lets do this!</p>
+            <section>
+                <form action="sign-up-page" method="post">
+                    <fieldset>
+                        <label for="firstName">First Name <input type="text" name="firstName" id="firstName" required/></label>
+                        <label for="lastName">Last Name<input type="text" name="lastName" id="lastName"required></label>
+                        <label for="email">Email<input type="email" name="email" id="email"required></label>
+                        <label for="phoneNumber">Phone Number <input type="tel" name=" phoneNumber" id="phoneNumber" required></label>
+                        <label for="password">Password<input type="password" name="password" id="password" required></label>
+                        <label for="password">Confirm Password <input type="password" name="confirmPassword" id="confirmPassword" required></label>
+                        <div>
+                            <button type="submit">Sign Up</button>
+                        </div>
+                        <div class="footer">
+                            <p>Already have an account?</p>
+                            <a class="login">Log In</a>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
