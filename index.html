@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div class="left-container">
         <img src="logo.jpg" alt="Photo by mae black on Unsplash">
-        <p class="logo">Logo</p>
     </div>
     <div class="right-container">
         <div>This is not a real online service!</div>
         <div class="form-section">
-            <p>Lets do this!</p>
             <section>
                 <form action="sign-up-page" method="post">
-                    <fieldset>
+
+                    <fieldset class="form-control">
                         <label for="firstName">First Name <input type="text" name="firstName" id="firstName" required/></label>
                         <label for="lastName">Last Name<input type="text" name="lastName" id="lastName"required></label>
                         <label for="email">Email<input type="email" name="email" id="email"required></label>
