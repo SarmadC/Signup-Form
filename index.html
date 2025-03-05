@@ -1,42 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-    <div class="left-container">
-        <img src="logo.jpg" alt="Photo by mae black on Unsplash">
-    </div>
-    <div class="right-container">
-        <div>This is not a real online service!</div>
-        <div class="form-section">
-            <section>
-                <form action="sign-up-page" method="post">
 
-                    <fieldset class="form-control">
-                        <label for="firstName">First Name <input type="text" name="firstName" id="firstName" required/></label>
-                        <label for="lastName">Last Name<input type="text" name="lastName" id="lastName"required></label>
-                        <label for="email">Email<input type="email" name="email" id="email"required></label>
-                        <label for="phoneNumber">Phone Number <input type="tel" name=" phoneNumber" id="phoneNumber" required></label>
-                        <label for="password">Password<input type="password" name="password" id="password" required></label>
-                        <label for="password">Confirm Password <input type="password" name="confirmPassword" id="confirmPassword" required></label>
-                        <div>
-                            <button type="submit">Sign Up</button>
-                        </div>
-                        <div class="footer">
-                            <p>Already have an account?</p>
-                            <a class="login">Log In</a>
-                        </div>
-                    </fieldset>
-                </form>
-            </section>
+<body>
+    <main>
+        <div class="left">
+            <div class="left-container">
+                <img src="logo.jpg" alt="Photo by mae black on Unsplash">
+                <span>Text Logo</span>
+            </div>
         </div>
-    </div>
+
+        <div class="right">
+            <div class="right-container">
+                <div class="top">
+                    <p class="hero">This is not a real online service! You know you need something<br> like this in your
+                        life to help your realize your deepest dreams.<br>
+                        Sign up <i>now</i> to get started.</p>
+                    <p class="subheading">You <i>know</i> you want to.</p>
+                </div>
+                <div class="form-container">
+                    <h3 class="form-heading">
+                        Let's do this!
+                    </h3>
+                    <form action="signup-page" method="post">
+                        <div class="first-row">
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName" required>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="second-row">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName" required>
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="tel" name="phoneNumber" id="phoneNumber" required>
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="submit">
+                    <button type="submit">Submit</button>
+                    <p>text 3</p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>

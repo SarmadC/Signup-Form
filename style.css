@@ -1,31 +1,69 @@
-img{
-  object-fit: cover;
-}
-
 body{
   display:flex;
   margin: 0;
   height: 100vh;
   font-family: "Roboto", sans-serif;
+  background-color: aliceblue;
 }
 
-.left-container{
-  display: flex;
-  width:30%;
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.left-container img{
+    width: 40vw;
+    height:100vh;
+    min-width: 250px;
+    min-height: 250px;
+    display: inline-block;
 }
 
 .right-container{
   display: flex;
-  width:70%;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-.form-control{
+
+form{
   display:grid;
   grid-template-columns: 1fr 1fr;
+  background-color: rgb(255, 255, 255);
+  width:60vw;
+  height: 30vh;
+  line-height: 2.0;
+  padding:40px;
+  box-shadow: 0 10px 5px -5px lightgray;
+
 }
 
 label{
-  display: inline-block;
+  display: block;
+  margin:5px;
+}
+
+input{
+    display:block;
+    padding:5px;
+    width:70%;
+    margin-top: 1rem;
+    
+}
+
+.first-row, .second-row{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.top{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
 }
